@@ -1,0 +1,22 @@
+{
+  "case": "av_fd",
+  "model": "nvidia/Cosmos3-Nano",
+  "topology": "single",
+  "baseline_pipeline_time_s": 3.56,
+  "seacache_pipeline_time_s": 2.43,
+  "speedup": 1.4650205761316872,
+  "baseline_client_latency_s": 4.036810084246099,
+  "seacache_client_latency_s": 4.044326319359243,
+  "baseline_action_shape": [
+    60,
+    9
+  ],
+  "seacache_action_shape": [
+    60,
+    9
+  ],
+  "baseline_action_dtype": "torch.bfloat16",
+  "seacache_action_dtype": "torch.bfloat16",
+  "baseline_action_domain_id": 1,
+  "seacache_action_domain_id": 1
+}

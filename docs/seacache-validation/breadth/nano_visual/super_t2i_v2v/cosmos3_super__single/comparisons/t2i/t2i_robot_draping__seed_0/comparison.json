@@ -1,0 +1,27 @@
+{
+  "media_type": "image",
+  "mode": "t2i",
+  "sample_id": "t2i_robot_draping",
+  "seed": 0,
+  "baseline_pipeline_time_s": 4.06,
+  "seacache_pipeline_time_s": 2.13,
+  "speedup": 1.9061032863849765,
+  "baseline_client_latency_s": 4.156424579676241,
+  "seacache_client_latency_s": 2.2234187400899827,
+  "comparison_media": "breadth/nano_visual/super_t2i_v2v/cosmos3_super__single/comparisons/t2i/t2i_robot_draping__seed_0/side_by_side.png",
+  "reference": "no-cache output (omitted from publish bundle)",
+  "candidate": "SeaCache output (omitted from publish bundle)",
+  "shape_hwc": [
+    720,
+    1280,
+    3
+  ],
+  "lpips_net": "alex",
+  "lpips": 0.25083616375923157,
+  "psnr_db": 15.74945637122006,
+  "ssim": 0.7790061925016193,
+  "mae": 0.10664158441759691,
+  "rmse": 0.16312750035815424,
+  "max_abs_diff_255": 255,
+  "side_by_side_image": "breadth/nano_visual/super_t2i_v2v/cosmos3_super__single/comparisons/t2i/t2i_robot_draping__seed_0/side_by_side.png"
+}

@@ -1,0 +1,22 @@
+{
+  "case": "av_fd",
+  "model": "nvidia/Cosmos3-Super",
+  "topology": "cfg2_hsdp2",
+  "baseline_pipeline_time_s": 14.07,
+  "seacache_pipeline_time_s": 8.46,
+  "speedup": 1.6631205673758864,
+  "baseline_client_latency_s": 16.071217861026525,
+  "seacache_client_latency_s": 10.050424708984792,
+  "baseline_action_shape": [
+    60,
+    9
+  ],
+  "seacache_action_shape": [
+    60,
+    9
+  ],
+  "baseline_action_dtype": "torch.bfloat16",
+  "seacache_action_dtype": "torch.bfloat16",
+  "baseline_action_domain_id": 1,
+  "seacache_action_domain_id": 1
+}

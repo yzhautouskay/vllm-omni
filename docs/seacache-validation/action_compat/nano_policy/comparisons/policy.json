@@ -1,0 +1,22 @@
+{
+  "case": "policy",
+  "model": "nvidia/Cosmos3-Nano-Policy-DROID",
+  "topology": "single",
+  "baseline_pipeline_time_s": 1.05,
+  "seacache_pipeline_time_s": 0.73,
+  "speedup": 1.4383561643835618,
+  "baseline_client_latency_s": 2.042671648785472,
+  "seacache_client_latency_s": 2.0324381389655173,
+  "baseline_action_shape": [
+    16,
+    10
+  ],
+  "seacache_action_shape": [
+    16,
+    10
+  ],
+  "baseline_action_dtype": "torch.bfloat16",
+  "seacache_action_dtype": "torch.bfloat16",
+  "baseline_action_domain_id": 8,
+  "seacache_action_domain_id": 8
+}
