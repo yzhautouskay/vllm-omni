@@ -81,71 +81,110 @@ Coverage includes T2I, V2V, edge, blur, depth, segmentation, world-space-map, an
 
 
 
-## Visual evidence gallery
+## Representative visual evidence
+
+The aggregate results above cover all **102 paired visual generations**. This page publishes a curated set of **18 visual comparisons** plus **3 action comparisons**, rather than every seed. Complete per-seed artifacts remain in the validation output and were not copied to this report branch.
 
 Each comparison uses matched seeds and inputs: **no cache is on the left, SeaCache is on the right**. Players use `preload="metadata"` so opening the report does not download every video in full.
 
-### Generation-mode coverage
+### Nano — 1 GPU
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1rem">
   <figure style="margin:0">
-    <figcaption><strong>T2I — Nano, 1 GPU</strong></figcaption>
-    <img src="breadth/nano_visual/nano_t2i_v2v/cosmos3_nano__single/comparisons/t2i/t2i_robot_draping__seed_0/side_by_side.png" alt="Nano single-GPU T2I no-cache and SeaCache comparison" style="width:100%">
+    <figcaption><strong>T2I</strong> · <a href="breadth/nano_visual/nano_t2i_v2v/cosmos3_nano__single/comparisons/t2i/t2i_robot_draping__seed_0/side_by_side.png">open</a> · <a href="breadth/nano_visual/nano_t2i_v2v/cosmos3_nano__single/comparisons/t2i/t2i_robot_draping__seed_0/comparison.json">metrics</a></figcaption>
+    <img loading="lazy" src="breadth/nano_visual/nano_t2i_v2v/cosmos3_nano__single/comparisons/t2i/t2i_robot_draping__seed_0/side_by_side.png" alt="Nano single-GPU T2I no-cache and SeaCache comparison" style="width:100%">
   </figure>
   <figure style="margin:0">
-    <figcaption><strong>I2V — Nano, 1 GPU</strong></figcaption>
-    <video controls preload="metadata" style="width:100%">
-      <source src="core_preview/lane0/cosmos3_nano__single/comparisons/i2v/i2v_humanoid_robot__seed_0/synced.mp4" type="video/mp4">
-    </video>
+    <figcaption><strong>I2V</strong> · <a href="core_preview/lane0/cosmos3_nano__single/comparisons/i2v/i2v_humanoid_robot__seed_0/synced.mp4">open</a> · <a href="core_preview/lane0/cosmos3_nano__single/comparisons/i2v/i2v_humanoid_robot__seed_0/comparison.json">metrics</a></figcaption>
+    <video controls preload="metadata" style="width:100%"><source src="core_preview/lane0/cosmos3_nano__single/comparisons/i2v/i2v_humanoid_robot__seed_0/synced.mp4" type="video/mp4"></video>
   </figure>
   <figure style="margin:0">
-    <figcaption><strong>T2V — Nano, 1 GPU</strong></figcaption>
-    <video controls preload="metadata" style="width:100%">
-      <source src="core_preview/lane0/cosmos3_nano__single/comparisons/t2v/t2v_robot_kitchen__seed_0/synced.mp4" type="video/mp4">
-    </video>
+    <figcaption><strong>T2V</strong> · <a href="core_preview/lane0/cosmos3_nano__single/comparisons/t2v/t2v_robot_kitchen__seed_0/synced.mp4">open</a> · <a href="core_preview/lane0/cosmos3_nano__single/comparisons/t2v/t2v_robot_kitchen__seed_0/comparison.json">metrics</a></figcaption>
+    <video controls preload="metadata" style="width:100%"><source src="core_preview/lane0/cosmos3_nano__single/comparisons/t2v/t2v_robot_kitchen__seed_0/synced.mp4" type="video/mp4"></video>
   </figure>
   <figure style="margin:0">
-    <figcaption><strong>V2V — Nano, 1 GPU</strong></figcaption>
-    <video controls preload="metadata" style="width:100%">
-      <source src="breadth/nano_visual/nano_t2i_v2v/cosmos3_nano__single/comparisons/v2v/v2v_car_driving__seed_0/synced.mp4" type="video/mp4">
-    </video>
+    <figcaption><strong>V2V</strong> · <a href="breadth/nano_visual/nano_t2i_v2v/cosmos3_nano__single/comparisons/v2v/v2v_car_driving__seed_0/synced.mp4">open</a> · <a href="breadth/nano_visual/nano_t2i_v2v/cosmos3_nano__single/comparisons/v2v/v2v_car_driving__seed_0/comparison.json">metrics</a></figcaption>
+    <video controls preload="metadata" style="width:100%"><source src="breadth/nano_visual/nano_t2i_v2v/cosmos3_nano__single/comparisons/v2v/v2v_car_driving__seed_0/synced.mp4" type="video/mp4"></video>
   </figure>
   <figure style="margin:0">
-    <figcaption><strong>Control transfer (blur) — Nano, 1 GPU</strong></figcaption>
-    <video controls preload="metadata" style="width:100%">
-      <source src="breadth/nano_visual/nano_transfer_a/cosmos3_nano__single/comparisons/transfer/transfer_blur__seed_2026/synced.mp4" type="video/mp4">
-    </video>
-  </figure>
-  <figure style="margin:0">
-    <figcaption><strong>Control transfer (blur) — Super, 1 GPU</strong></figcaption>
-    <video controls preload="metadata" style="width:100%">
-      <source src="breadth/super_transfer/super_transfer_a/cosmos3_super__single/comparisons/transfer/transfer_blur__seed_2026/synced.mp4" type="video/mp4">
-    </video>
+    <figcaption><strong>Control transfer (blur)</strong> · <a href="breadth/nano_visual/nano_transfer_a/cosmos3_nano__single/comparisons/transfer/transfer_blur__seed_2026/synced.mp4">open</a> · <a href="breadth/nano_visual/nano_transfer_a/cosmos3_nano__single/comparisons/transfer/transfer_blur__seed_2026/comparison.json">metrics</a></figcaption>
+    <video controls preload="metadata" style="width:100%"><source src="breadth/nano_visual/nano_transfer_a/cosmos3_nano__single/comparisons/transfer/transfer_blur__seed_2026/synced.mp4" type="video/mp4"></video>
   </figure>
 </div>
 
-### Parallelism coverage
-
-These matched I2V examples visualize cache behavior across the tested Super topologies.
+### Super — 1 GPU
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1rem">
   <figure style="margin:0">
-    <figcaption><strong>Super — 1 GPU</strong></figcaption>
-    <video controls preload="metadata" style="width:100%">
-      <source src="super_core/single/lane0/cosmos3_super__single/comparisons/i2v/i2v_humanoid_robot__seed_0/synced.mp4" type="video/mp4">
-    </video>
+    <figcaption><strong>T2I</strong> · <a href="breadth/nano_visual/super_t2i_v2v/cosmos3_super__single/comparisons/t2i/t2i_robot_draping__seed_0/side_by_side.png">open</a> · <a href="breadth/nano_visual/super_t2i_v2v/cosmos3_super__single/comparisons/t2i/t2i_robot_draping__seed_0/comparison.json">metrics</a></figcaption>
+    <img loading="lazy" src="breadth/nano_visual/super_t2i_v2v/cosmos3_super__single/comparisons/t2i/t2i_robot_draping__seed_0/side_by_side.png" alt="Super single-GPU T2I no-cache and SeaCache comparison" style="width:100%">
   </figure>
   <figure style="margin:0">
-    <figcaption><strong>Super — 2 GPUs (CFG=2, HSDP=2)</strong></figcaption>
-    <video controls preload="metadata" style="width:100%">
-      <source src="super_core/cfg2_hsdp2/lane0/cosmos3_super__cfg2_hsdp2/comparisons/i2v/i2v_humanoid_robot__seed_0/synced.mp4" type="video/mp4">
-    </video>
+    <figcaption><strong>I2V</strong> · <a href="super_core/single/lane0/cosmos3_super__single/comparisons/i2v/i2v_humanoid_robot__seed_0/synced.mp4">open</a> · <a href="super_core/single/lane0/cosmos3_super__single/comparisons/i2v/i2v_humanoid_robot__seed_0/comparison.json">metrics</a></figcaption>
+    <video controls preload="metadata" style="width:100%"><source src="super_core/single/lane0/cosmos3_super__single/comparisons/i2v/i2v_humanoid_robot__seed_0/synced.mp4" type="video/mp4"></video>
   </figure>
   <figure style="margin:0">
-    <figcaption><strong>Super — 4 GPUs (CFG=2, Ulysses=2, HSDP=4)</strong></figcaption>
-    <video controls preload="metadata" style="width:100%">
-      <source src="super_core/cfg2_ulysses2_hsdp4/lane0/cosmos3_super__cfg2_ulysses2_hsdp4/comparisons/i2v/i2v_car_driving__seed_0/synced.mp4" type="video/mp4">
-    </video>
+    <figcaption><strong>T2V</strong> · <a href="super_core/single/lane0/cosmos3_super__single/comparisons/t2v/t2v_robot_kitchen__seed_0/synced.mp4">open</a> · <a href="super_core/single/lane0/cosmos3_super__single/comparisons/t2v/t2v_robot_kitchen__seed_0/comparison.json">metrics</a></figcaption>
+    <video controls preload="metadata" style="width:100%"><source src="super_core/single/lane0/cosmos3_super__single/comparisons/t2v/t2v_robot_kitchen__seed_0/synced.mp4" type="video/mp4"></video>
+  </figure>
+  <figure style="margin:0">
+    <figcaption><strong>V2V</strong> · <a href="breadth/nano_visual/super_t2i_v2v/cosmos3_super__single/comparisons/v2v/v2v_car_driving__seed_0/synced.mp4">open</a> · <a href="breadth/nano_visual/super_t2i_v2v/cosmos3_super__single/comparisons/v2v/v2v_car_driving__seed_0/comparison.json">metrics</a></figcaption>
+    <video controls preload="metadata" style="width:100%"><source src="breadth/nano_visual/super_t2i_v2v/cosmos3_super__single/comparisons/v2v/v2v_car_driving__seed_0/synced.mp4" type="video/mp4"></video>
+  </figure>
+  <figure style="margin:0">
+    <figcaption><strong>Control transfer (blur)</strong> · <a href="breadth/super_transfer/super_transfer_a/cosmos3_super__single/comparisons/transfer/transfer_blur__seed_2026/synced.mp4">open</a> · <a href="breadth/super_transfer/super_transfer_a/cosmos3_super__single/comparisons/transfer/transfer_blur__seed_2026/comparison.json">metrics</a></figcaption>
+    <video controls preload="metadata" style="width:100%"><source src="breadth/super_transfer/super_transfer_a/cosmos3_super__single/comparisons/transfer/transfer_blur__seed_2026/synced.mp4" type="video/mp4"></video>
+  </figure>
+</div>
+
+### Super — 2 GPUs (`CFG=2`, `HSDP=2`)
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1rem">
+  <figure style="margin:0">
+    <figcaption><strong>T2I</strong> · <a href="breadth/super_transfer/super_cfg2_breadth/cosmos3_super__cfg2_hsdp2/comparisons/t2i/t2i_robot_draping__seed_0/side_by_side.png">open</a> · <a href="breadth/super_transfer/super_cfg2_breadth/cosmos3_super__cfg2_hsdp2/comparisons/t2i/t2i_robot_draping__seed_0/comparison.json">metrics</a></figcaption>
+    <img loading="lazy" src="breadth/super_transfer/super_cfg2_breadth/cosmos3_super__cfg2_hsdp2/comparisons/t2i/t2i_robot_draping__seed_0/side_by_side.png" alt="Super two-GPU T2I no-cache and SeaCache comparison" style="width:100%">
+  </figure>
+  <figure style="margin:0">
+    <figcaption><strong>I2V</strong> · <a href="super_core/cfg2_hsdp2/lane0/cosmos3_super__cfg2_hsdp2/comparisons/i2v/i2v_humanoid_robot__seed_0/synced.mp4">open</a> · <a href="super_core/cfg2_hsdp2/lane0/cosmos3_super__cfg2_hsdp2/comparisons/i2v/i2v_humanoid_robot__seed_0/comparison.json">metrics</a></figcaption>
+    <video controls preload="metadata" style="width:100%"><source src="super_core/cfg2_hsdp2/lane0/cosmos3_super__cfg2_hsdp2/comparisons/i2v/i2v_humanoid_robot__seed_0/synced.mp4" type="video/mp4"></video>
+  </figure>
+  <figure style="margin:0">
+    <figcaption><strong>T2V</strong> · <a href="super_core/cfg2_hsdp2/lane0/cosmos3_super__cfg2_hsdp2/comparisons/t2v/t2v_robot_kitchen__seed_0/synced.mp4">open</a> · <a href="super_core/cfg2_hsdp2/lane0/cosmos3_super__cfg2_hsdp2/comparisons/t2v/t2v_robot_kitchen__seed_0/comparison.json">metrics</a></figcaption>
+    <video controls preload="metadata" style="width:100%"><source src="super_core/cfg2_hsdp2/lane0/cosmos3_super__cfg2_hsdp2/comparisons/t2v/t2v_robot_kitchen__seed_0/synced.mp4" type="video/mp4"></video>
+  </figure>
+  <figure style="margin:0">
+    <figcaption><strong>V2V</strong> · <a href="breadth/super_transfer/super_cfg2_breadth/cosmos3_super__cfg2_hsdp2/comparisons/v2v/v2v_car_driving__seed_0/synced.mp4">open</a> · <a href="breadth/super_transfer/super_cfg2_breadth/cosmos3_super__cfg2_hsdp2/comparisons/v2v/v2v_car_driving__seed_0/comparison.json">metrics</a></figcaption>
+    <video controls preload="metadata" style="width:100%"><source src="breadth/super_transfer/super_cfg2_breadth/cosmos3_super__cfg2_hsdp2/comparisons/v2v/v2v_car_driving__seed_0/synced.mp4" type="video/mp4"></video>
+  </figure>
+</div>
+
+### Super — 4 GPUs (`CFG=2`, `Ulysses=2`, `HSDP=4`)
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1rem">
+  <figure style="margin:0">
+    <figcaption><strong>I2V</strong> · <a href="super_core/cfg2_ulysses2_hsdp4/lane0/cosmos3_super__cfg2_ulysses2_hsdp4/comparisons/i2v/i2v_car_driving__seed_0/synced.mp4">open</a> · <a href="super_core/cfg2_ulysses2_hsdp4/lane0/cosmos3_super__cfg2_ulysses2_hsdp4/comparisons/i2v/i2v_car_driving__seed_0/comparison.json">metrics</a></figcaption>
+    <video controls preload="metadata" style="width:100%"><source src="super_core/cfg2_ulysses2_hsdp4/lane0/cosmos3_super__cfg2_ulysses2_hsdp4/comparisons/i2v/i2v_car_driving__seed_0/synced.mp4" type="video/mp4"></video>
+  </figure>
+  <figure style="margin:0">
+    <figcaption><strong>T2V</strong> · <a href="super_core/cfg2_ulysses2_hsdp4/lane0/cosmos3_super__cfg2_ulysses2_hsdp4/comparisons/t2v/t2v_car_colliding__seed_0/synced.mp4">open</a> · <a href="super_core/cfg2_ulysses2_hsdp4/lane0/cosmos3_super__cfg2_ulysses2_hsdp4/comparisons/t2v/t2v_car_colliding__seed_0/comparison.json">metrics</a></figcaption>
+    <video controls preload="metadata" style="width:100%"><source src="super_core/cfg2_ulysses2_hsdp4/lane0/cosmos3_super__cfg2_ulysses2_hsdp4/comparisons/t2v/t2v_car_colliding__seed_0/synced.mp4" type="video/mp4"></video>
+  </figure>
+</div>
+
+### Action-generation coverage
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1rem">
+  <figure style="margin:0">
+    <figcaption><strong>Nano, 1 GPU — AV forward dynamics</strong> · <a href="action_compat/nano_av/comparisons/av_fd_synced.mp4">open</a> · <a href="action_compat/nano_av/comparisons/av_fd.json">metrics</a></figcaption>
+    <video controls preload="metadata" style="width:100%"><source src="action_compat/nano_av/comparisons/av_fd_synced.mp4" type="video/mp4"></video>
+  </figure>
+  <figure style="margin:0">
+    <figcaption><strong>Nano, 1 GPU — DROID policy</strong> · <a href="action_compat/nano_policy/comparisons/policy_synced.mp4">open</a> · <a href="action_compat/nano_policy/comparisons/policy.json">metrics</a></figcaption>
+    <video controls preload="metadata" style="width:100%"><source src="action_compat/nano_policy/comparisons/policy_synced.mp4" type="video/mp4"></video>
+  </figure>
+  <figure style="margin:0">
+    <figcaption><strong>Super, 2 GPUs — AV forward dynamics</strong> · <a href="action_compat/super_cfg2/comparisons/av_fd_synced.mp4">open</a> · <a href="action_compat/super_cfg2/comparisons/av_fd.json">metrics</a></figcaption>
+    <video controls preload="metadata" style="width:100%"><source src="action_compat/super_cfg2/comparisons/av_fd_synced.mp4" type="video/mp4"></video>
   </figure>
 </div>
 
@@ -184,48 +223,4 @@ The highest T2V LPIPS is **0.2978** for Nano `single` / `t2v_street_musicians` s
 [Open synchronized T2V comparison](core_preview/lane2/cosmos3_nano__single/comparisons/t2v/t2v_street_musicians__seed_1/synced.mp4)
 
 [Open per-pair metrics](core_preview/lane2/cosmos3_nano__single/comparisons/t2v/t2v_street_musicians__seed_1/comparison.json)
-
-## Representative evidence
-
-- Nano / `single` / `i2v`: [comparison](core_preview/lane0/cosmos3_nano__single/comparisons/i2v/i2v_humanoid_robot__seed_0/synced.mp4) · [metrics](core_preview/lane0/cosmos3_nano__single/comparisons/i2v/i2v_humanoid_robot__seed_0/comparison.json)
-- Nano / `single` / `t2i`: [comparison](breadth/nano_visual/nano_t2i_v2v/cosmos3_nano__single/comparisons/t2i/t2i_robot_draping__seed_0/side_by_side.png) · [metrics](breadth/nano_visual/nano_t2i_v2v/cosmos3_nano__single/comparisons/t2i/t2i_robot_draping__seed_0/comparison.json)
-- Nano / `single` / `t2v`: [comparison](core_preview/lane0/cosmos3_nano__single/comparisons/t2v/t2v_robot_kitchen__seed_0/synced.mp4) · [metrics](core_preview/lane0/cosmos3_nano__single/comparisons/t2v/t2v_robot_kitchen__seed_0/comparison.json)
-- Nano / `single` / `transfer`: [comparison](breadth/nano_visual/nano_transfer_a/cosmos3_nano__single/comparisons/transfer/transfer_blur__seed_2026/synced.mp4) · [metrics](breadth/nano_visual/nano_transfer_a/cosmos3_nano__single/comparisons/transfer/transfer_blur__seed_2026/comparison.json)
-- Nano / `single` / `v2v`: [comparison](breadth/nano_visual/nano_t2i_v2v/cosmos3_nano__single/comparisons/v2v/v2v_car_driving__seed_0/synced.mp4) · [metrics](breadth/nano_visual/nano_t2i_v2v/cosmos3_nano__single/comparisons/v2v/v2v_car_driving__seed_0/comparison.json)
-- Super / `cfg2_hsdp2` / `i2v`: [comparison](super_core/cfg2_hsdp2/lane0/cosmos3_super__cfg2_hsdp2/comparisons/i2v/i2v_humanoid_robot__seed_0/synced.mp4) · [metrics](super_core/cfg2_hsdp2/lane0/cosmos3_super__cfg2_hsdp2/comparisons/i2v/i2v_humanoid_robot__seed_0/comparison.json)
-- Super / `cfg2_hsdp2` / `t2i`: [comparison](breadth/super_transfer/super_cfg2_breadth/cosmos3_super__cfg2_hsdp2/comparisons/t2i/t2i_robot_draping__seed_0/side_by_side.png) · [metrics](breadth/super_transfer/super_cfg2_breadth/cosmos3_super__cfg2_hsdp2/comparisons/t2i/t2i_robot_draping__seed_0/comparison.json)
-- Super / `cfg2_hsdp2` / `t2v`: [comparison](super_core/cfg2_hsdp2/lane0/cosmos3_super__cfg2_hsdp2/comparisons/t2v/t2v_robot_kitchen__seed_0/synced.mp4) · [metrics](super_core/cfg2_hsdp2/lane0/cosmos3_super__cfg2_hsdp2/comparisons/t2v/t2v_robot_kitchen__seed_0/comparison.json)
-- Super / `cfg2_hsdp2` / `v2v`: [comparison](breadth/super_transfer/super_cfg2_breadth/cosmos3_super__cfg2_hsdp2/comparisons/v2v/v2v_car_driving__seed_0/synced.mp4) · [metrics](breadth/super_transfer/super_cfg2_breadth/cosmos3_super__cfg2_hsdp2/comparisons/v2v/v2v_car_driving__seed_0/comparison.json)
-- Super / `cfg2_ulysses2_hsdp4` / `i2v`: [comparison](super_core/cfg2_ulysses2_hsdp4/lane0/cosmos3_super__cfg2_ulysses2_hsdp4/comparisons/i2v/i2v_car_driving__seed_0/synced.mp4) · [metrics](super_core/cfg2_ulysses2_hsdp4/lane0/cosmos3_super__cfg2_ulysses2_hsdp4/comparisons/i2v/i2v_car_driving__seed_0/comparison.json)
-- Super / `cfg2_ulysses2_hsdp4` / `t2v`: [comparison](super_core/cfg2_ulysses2_hsdp4/lane0/cosmos3_super__cfg2_ulysses2_hsdp4/comparisons/t2v/t2v_car_colliding__seed_0/synced.mp4) · [metrics](super_core/cfg2_ulysses2_hsdp4/lane0/cosmos3_super__cfg2_ulysses2_hsdp4/comparisons/t2v/t2v_car_colliding__seed_0/comparison.json)
-- Super / `single` / `i2v`: [comparison](super_core/single/lane0/cosmos3_super__single/comparisons/i2v/i2v_humanoid_robot__seed_0/synced.mp4) · [metrics](super_core/single/lane0/cosmos3_super__single/comparisons/i2v/i2v_humanoid_robot__seed_0/comparison.json)
-- Super / `single` / `t2i`: [comparison](breadth/nano_visual/super_t2i_v2v/cosmos3_super__single/comparisons/t2i/t2i_robot_draping__seed_0/side_by_side.png) · [metrics](breadth/nano_visual/super_t2i_v2v/cosmos3_super__single/comparisons/t2i/t2i_robot_draping__seed_0/comparison.json)
-- Super / `single` / `t2v`: [comparison](super_core/single/lane0/cosmos3_super__single/comparisons/t2v/t2v_robot_kitchen__seed_0/synced.mp4) · [metrics](super_core/single/lane0/cosmos3_super__single/comparisons/t2v/t2v_robot_kitchen__seed_0/comparison.json)
-- Super / `single` / `transfer`: [comparison](breadth/super_transfer/super_transfer_a/cosmos3_super__single/comparisons/transfer/transfer_blur__seed_2026/synced.mp4) · [metrics](breadth/super_transfer/super_transfer_a/cosmos3_super__single/comparisons/transfer/transfer_blur__seed_2026/comparison.json)
-- Super / `single` / `v2v`: [comparison](breadth/nano_visual/super_t2i_v2v/cosmos3_super__single/comparisons/v2v/v2v_car_driving__seed_0/synced.mp4) · [metrics](breadth/nano_visual/super_t2i_v2v/cosmos3_super__single/comparisons/v2v/v2v_car_driving__seed_0/comparison.json)
-
-
-
-### Action evidence
-
-- Nano / `single` / `av_fd`: [video](action_compat/nano_av/comparisons/av_fd_synced.mp4) · [metrics](action_compat/nano_av/comparisons/av_fd.json)
-
-<video controls preload="metadata" style="width: 100%; max-width: 960px">
-  <source src="action_compat/nano_av/comparisons/av_fd_synced.mp4" type="video/mp4">
-</video>
-
-- Nano / `single` / `policy`: [video](action_compat/nano_policy/comparisons/policy_synced.mp4) · [metrics](action_compat/nano_policy/comparisons/policy.json)
-
-<video controls preload="metadata" style="width: 100%; max-width: 960px">
-  <source src="action_compat/nano_policy/comparisons/policy_synced.mp4" type="video/mp4">
-</video>
-
-- Super / `cfg2_hsdp2` / `av_fd`: [video](action_compat/super_cfg2/comparisons/av_fd_synced.mp4) · [metrics](action_compat/super_cfg2/comparisons/av_fd.json)
-
-<video controls preload="metadata" style="width: 100%; max-width: 960px">
-  <source src="action_compat/super_cfg2/comparisons/av_fd_synced.mp4" type="video/mp4">
-</video>
-
-
-
 
