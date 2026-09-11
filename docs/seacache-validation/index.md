@@ -10,7 +10,7 @@ The domain score is 0.1 points below no-cache leaderboard reference. Manual insp
 
 ## Result
 
-- Commit: `640daae0041555ac0cee78840880e1b39399f9f4`
+- Commit: [`640daae0041555ac0cee78840880e1b39399f9f4`](https://github.com/yzhautouskay/vllm-omni/commit/640daae0041555ac0cee78840880e1b39399f9f4)
 - Paired visual generations evaluated by task:
   - T2I: **9 pairs** (**18 outputs**: 9 no-cache + 9 SeaCache)
   - I2V: **24 pairs** (**48 outputs**: 24 no-cache + 24 SeaCache)
