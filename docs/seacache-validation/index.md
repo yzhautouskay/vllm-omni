@@ -95,7 +95,9 @@ The highest T2I LPIPS is **0.3453** for Nano `single` / `t2i_robot_draping` seed
 
 The highest I2V LPIPS is **0.2042** for Super `single` / `i2v_car_driving` seed 2. PSNR is **20.66 dB** and SSIM is **0.5741**. This is the task's worst case by LPIPS, but manual review found no clear visual degradation.
 
-
+<video controls preload="metadata" style="width: 100%; max-width: 960px">
+  <source src="super_core/single/lane3/cosmos3_super__single/comparisons/i2v/i2v_car_driving__seed_2/synced.mp4" type="video/mp4">
+</video>
 
 [Open synchronized I2V comparison](super_core/single/lane3/cosmos3_super__single/comparisons/i2v/i2v_car_driving__seed_2/synced.mp4)
 
@@ -105,7 +107,9 @@ The highest I2V LPIPS is **0.2042** for Super `single` / `i2v_car_driving` seed 
 
 The highest T2V LPIPS is **0.2978** for Nano `single` / `t2v_street_musicians` seed 1. PSNR is **16.87 dB** and SSIM is **0.5950**. This is the task's worst case by LPIPS, but manual review found no clear visual degradation.
 
-
+<video controls preload="metadata" style="width: 100%; max-width: 960px">
+  <source src="core_preview/lane2/cosmos3_nano__single/comparisons/t2v/t2v_street_musicians__seed_1/synced.mp4" type="video/mp4">
+</video>
 
 [Open synchronized T2V comparison](core_preview/lane2/cosmos3_nano__single/comparisons/t2v/t2v_street_musicians__seed_1/synced.mp4)
 
@@ -135,8 +139,22 @@ The highest T2V LPIPS is **0.2978** for Nano `single` / `t2v_street_musicians` s
 ### Action evidence
 
 - Nano / `single` / `av_fd`: [video](action_compat/nano_av/comparisons/av_fd_synced.mp4) · [metrics](action_compat/nano_av/comparisons/av_fd.json)
+
+<video controls preload="metadata" style="width: 100%; max-width: 960px">
+  <source src="action_compat/nano_av/comparisons/av_fd_synced.mp4" type="video/mp4">
+</video>
+
 - Nano / `single` / `policy`: [video](action_compat/nano_policy/comparisons/policy_synced.mp4) · [metrics](action_compat/nano_policy/comparisons/policy.json)
+
+<video controls preload="metadata" style="width: 100%; max-width: 960px">
+  <source src="action_compat/nano_policy/comparisons/policy_synced.mp4" type="video/mp4">
+</video>
+
 - Super / `cfg2_hsdp2` / `av_fd`: [video](action_compat/super_cfg2/comparisons/av_fd_synced.mp4) · [metrics](action_compat/super_cfg2/comparisons/av_fd.json)
+
+<video controls preload="metadata" style="width: 100%; max-width: 960px">
+  <source src="action_compat/super_cfg2/comparisons/av_fd_synced.mp4" type="video/mp4">
+</video>
 
 
 
