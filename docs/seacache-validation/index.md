@@ -216,6 +216,10 @@ The highest I2V LPIPS is **0.2042** for Super `single` / `i2v_car_driving` seed 
 
 The highest T2V LPIPS is **0.2978** for Nano `single` / `t2v_street_musicians` seed 1. PSNR is **16.87 dB** and SSIM is **0.5950**. This is the task's worst case by LPIPS, but manual review found no clear visual degradation.
 
+**Prompt:** “Three people are playing guitar on the street. It is a bright daylight in the city center. In the background, there is a banner with the text "Music Fest 2026"”
+
+Interestingly, the SeaCache output followed the prompt more accurately in this case: it rendered all three musicians, while the no-cache baseline rendered only two.
+
 <video controls preload="metadata" style="width: 100%; max-width: 960px">
   <source src="core_preview/lane2/cosmos3_nano__single/comparisons/t2v/t2v_street_musicians__seed_1/synced.mp4" type="video/mp4">
 </video>
